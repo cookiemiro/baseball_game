@@ -24,12 +24,11 @@ public class Player {
                 System.out.println("게임을 다시 시작합니다.");
                 startGame();
             }
-
-            case "2" -> exit();
+            case "2" -> finish();
         }
     }
 
-    private void exit() {
-        System.exit(0);
+    private void finish() {
+        gameMachine.quit();
     }
 }

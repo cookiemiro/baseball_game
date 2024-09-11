@@ -27,4 +27,8 @@ public class GameMachine {
         Reader reader = new Reader();
         return reader.verify(input, set);
     }
+
+    public void quit() {
+        System.exit(0);
+    }
 }
